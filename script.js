@@ -1,14 +1,10 @@
-let count =1;
-document.getElementById("radio1").checked=true;
+let contador = 1;
 
 setInterval( function(){
-    nextImage();
-}, 5000)
+    document.getElementById(`slide`+ contador).checked = true;
+    contador ++;
 
-function nextImage(){
-    count++;
-    if(count>4){
-        count=1;
+    if(contador > 5){
+        contador = 1;
     }
-    document.getElementById("radio" + count).checked =true; 
-}
+},3000)

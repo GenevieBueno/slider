@@ -4,51 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slider com HTML e CSS</title>
+    <title>Slide de Imagens</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="script" href="script.js">
 </head>
 <body>
-    <div class="slider">
-
+    <div class="content">
         <div class="slides">
-            <input type="radio" nome="radio-btn" id="radio1">
-            <input type="radio" nome="radio-btn" id="radio2">
-            <input type="radio" nome="radio-btn" id="radio3">
-            <input type="radio" nome="radio-btn" id="radio4">
+           <input type="radio" name="slide" id="slide1" checked>
+           <input type="radio" name="slide"id="slide2">
+           <input type="radio" name="slide"id="slide3">
+           <input type="radio" name="slide"id="slide4">
+           <input type="radio" name="slide"id="slide5">
 
-            <div class="slide first">
-                <img src="images/edificios-luzes-manhattan.webp" alt="Imagem1">
+           <div class="slide s1">
+            <img src="./images/img1.webp" alt="pedras">
+           </div>
+
+           <div class="slide">
+            <img src="./images/img2.webp" alt="lago-azul">
+            </div>
+            
+            <div class="slide">
+            <img src="./images/img3.webp" alt="lago-montanha">
+            </div>
+
+             <div class="slide">
+            <img src="./images/img4.webp" alt="aurora-boreal">
             </div>
 
             <div class="slide">
-                <img src="images/istockphoto-660992714-170667a.jpg" alt="Imagem2">
-            </div>
+                <img src="./images/img5.webp" alt="praia">
+                </div>
 
-            <div class="slide">
-                <img src="images/lagoa-pampulha.webp" alt="Imagem3">
+            <div class="navigation">
+                <label for="slide1" class="bar"></label>
+                <label for="slide2" class="bar"></label>
+                <label for="slide3" class="bar"></label>
+                <label for="slide4" class="bar"></label>
+                <label for="slide5" class="bar"></label>
             </div>
-
-            <div class="slide">
-                <img src="images/paisagem-natural-suica.webp" alt="Imagem4">
-            </div>
-
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-            </div>
-        </div>
-
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
